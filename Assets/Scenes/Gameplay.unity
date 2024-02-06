@@ -2255,6 +2255,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 6505338092035888528, guid: c64b34a7f4fdd6342bf6b0f373c8f9d4, type: 3}
+    - target: {fileID: 2547099442560468132, guid: 2210163adfdc046b29a4f0bcf7da00f3, type: 3}
+      propertyPath: bigExplosionPrefab
+      value: 
+      objectReference: {fileID: 6505338092035888528, guid: 942fbc71c1f51f644a4749abd22fb3fb, type: 3}
     - target: {fileID: 6259885726337937466, guid: 2210163adfdc046b29a4f0bcf7da00f3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
