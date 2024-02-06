@@ -60,4 +60,15 @@ public class SoundManager : MonoBehaviour
                 s.Source.Stop();
         }
     }
+
+    public void StopAllSounds()
+    {
+        foreach (Sound s in sounds)
+            s.Source.Stop();
+    }
+
+    public void SwitchMusic(string clip){
+        StopAllSounds();
+        PlaySound(clip);
+    }
 }

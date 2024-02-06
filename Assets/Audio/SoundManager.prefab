@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5699879126307183889}
   - component: {fileID: 4853304729661587483}
+  - component: {fileID: 4399457556803767879}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -45,4 +46,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixer: {fileID: 24300002, guid: 07de4c21fd04c63448ab5fb2300dc98b, type: 2}
-  sounds: []
+  sounds:
+  - Name: BackgroundMusicMenu
+    Source: {fileID: 0}
+    Clips:
+    - {fileID: 8300000, guid: 6b064db919434412e8e9d265b6d2fa2d, type: 3}
+    Volume: 1
+    Pitch: 0
+    Loop: 1
+    PlayOnAwake: 0
+  - Name: BackgroundMusicGameplay
+    Source: {fileID: 0}
+    Clips:
+    - {fileID: 8300000, guid: 1527b839ce50a964dbbff4cb9c198b5b, type: 3}
+    Volume: 1
+    Pitch: 0
+    Loop: 1
+    PlayOnAwake: 0
+--- !u!114 &4399457556803767879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246682757761128970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be555c4d1b89426d8d18b451e209f85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: eba92a6bdbdc26043ba64b270935febb, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4853304729661587483}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: SwitchMusic
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

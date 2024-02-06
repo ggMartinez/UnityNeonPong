@@ -252,38 +252,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
-    - target: {fileID: 4853304729661587483, guid: a271b4f934766b44f86dba7a24767cba, type: 3}
-      propertyPath: mixer
-      value: 
-      objectReference: {fileID: 24300002, guid: 07de4c21fd04c63448ab5fb2300dc98b, type: 2}
-    - target: {fileID: 4853304729661587483, guid: a271b4f934766b44f86dba7a24767cba, type: 3}
-      propertyPath: sounds.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853304729661587483, guid: a271b4f934766b44f86dba7a24767cba, type: 3}
-      propertyPath: sounds.Array.data[0].Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853304729661587483, guid: a271b4f934766b44f86dba7a24767cba, type: 3}
-      propertyPath: sounds.Array.data[0].Name
-      value: Background Music
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853304729661587483, guid: a271b4f934766b44f86dba7a24767cba, type: 3}
-      propertyPath: sounds.Array.data[0].Volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853304729661587483, guid: a271b4f934766b44f86dba7a24767cba, type: 3}
-      propertyPath: sounds.Array.data[0].PlayOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853304729661587483, guid: a271b4f934766b44f86dba7a24767cba, type: 3}
-      propertyPath: sounds.Array.data[0].Clips.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853304729661587483, guid: a271b4f934766b44f86dba7a24767cba, type: 3}
-      propertyPath: sounds.Array.data[0].Clips.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 6b064db919434412e8e9d265b6d2fa2d, type: 3}
     - target: {fileID: 5699879126307183889, guid: a271b4f934766b44f86dba7a24767cba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -745,6 +713,7 @@ Transform:
   m_Children:
   - {fileID: 1197068219}
   - {fileID: 1831237758}
+  - {fileID: 2048026603}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1831237757
@@ -1062,6 +1031,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967310630}
   m_CullTransparentMesh: 1
+--- !u!1 &2048026602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2048026603}
+  - component: {fileID: 2048026604}
+  m_Layer: 0
+  m_Name: StartMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2048026603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048026602}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1797200969}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2048026604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048026602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 983782b8aff418d4ba773b79703487cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playMusic: {fileID: 11400000, guid: eba92a6bdbdc26043ba64b270935febb, type: 2}
+  musicName: BackgroundMusicMenu
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

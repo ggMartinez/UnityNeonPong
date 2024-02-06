@@ -7,6 +7,8 @@ public class BallBounce : MonoBehaviour
 
     [SerializeField] BallMovement ballMovement;
     [SerializeField] ScoreManager scoreManager;
+    [SerializeField] private SoundPlayer soundPlayer;
+    [SerializeField] GameObject explosionPrefab;
     
     void bounce(Collision2D collider){
         Vector3 ballPosition = transform.position;
@@ -26,6 +28,7 @@ public class BallBounce : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D collider){
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         if(collider.gameObject.tag == "Player")
             bounce(collider);
     
@@ -42,5 +45,13 @@ public class BallBounce : MonoBehaviour
             StartCoroutine(ballMovement.Launch());
         }
 
+        playSound(collider);
+    }
+
+    void playSound(Collision2D collider){
+        if(collider.gameObject.tag != "LeftBorder" && collider.gameObject.tag != "RightBorder")
+            soundPlayer.PlaySound("Bounce");
+        if(collider.gameObject.tag == "LeftBorder" || collider.gameObject.tag == "RightBorder")
+            soundPlayer.PlaySound("Explode");
     }
 }
