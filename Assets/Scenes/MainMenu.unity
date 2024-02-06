@@ -786,7 +786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
+  m_SendPointerHoverToParent: 0
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -835,7 +835,7 @@ GameObject:
   - component: {fileID: 1680554012}
   - component: {fileID: 1680554013}
   m_Layer: 0
-  m_Name: CursorSettings
+  m_Name: IgnoreMouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -865,7 +865,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1680554011}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5626d23a2e308c145b4ffa6541f21e24, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c4ab563eb4e3cf42adc1bfb4b05b973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1768688652
