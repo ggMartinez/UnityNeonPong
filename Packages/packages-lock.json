@@ -228,11 +228,11 @@
       "url": "https://packages.unity.com"
     },
     "com.windmaster.eventsystem": {
-      "version": "https://github.com/ggMartinez/Unity-Event-System-Package.git#0.1.3",
+      "version": "https://github.com/ggMartinez/Unity-Event-System-Package.git#0.1.4",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "5632bea84acae37d5989ab972a2da0eebf345df3"
+      "hash": "77eddf68c6bb638583bdc24b6f637277c3588881"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
