@@ -29,6 +29,7 @@ public class BallBounce : MonoBehaviour
     
     }
 
+
     void OnCollisionEnter2D(Collision2D collider){
         if(collider.gameObject.tag == "Player"){
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);

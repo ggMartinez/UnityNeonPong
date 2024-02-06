@@ -26,9 +26,9 @@ public class BallMovement : MonoBehaviour
     }
     public IEnumerator Launch(){
         restartBall();
-        trailRenderer.SetActive(true);
         hitCounter = 0;
         yield return new WaitForSeconds(1);
+        trailRenderer.SetActive(true);
         if (PlayerOneStart) MoveBall(new Vector2(-1,0));
         if (!PlayerOneStart) MoveBall(new Vector2(1,0));
     }
