@@ -185,6 +185,7 @@ MonoBehaviour:
   scoreManager: {fileID: 0}
   soundPlayer: {fileID: 0}
   explosionPrefab: {fileID: 0}
+  bigExplosionPrefab: {fileID: 0}
 --- !u!96 &1901408874036466419
 TrailRenderer:
   serializedVersion: 3
