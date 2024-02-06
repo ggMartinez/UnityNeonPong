@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class IgnoreMouse : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private GameObject selectedObj;
+    public static IgnoreMouse instance;
 
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(this.gameObject);
+        DontDestroyOnLoad(this);
+    }
     void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         
     }
+
 
     
 }
