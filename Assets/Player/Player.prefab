@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6788149346717936516}
   - component: {fileID: 6693354891696534985}
   - component: {fileID: 4145798833263841349}
+  - component: {fileID: 288856040340618260}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -255,8 +256,37 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 02b476be-9bbf-4028-bfc7-b324fe511ac1
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 288856040340618260}
+        m_TargetAssemblyTypeName: PlayerPause, Assembly-CSharp
+        m_MethodName: OnPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b4280165-b554-4cf9-8c4e-c80bfa515886
+    m_ActionName: Player/Pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &288856040340618260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4422565624456328851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa77fc4fdefa7be49941fef2744ed7fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseEvent: {fileID: 11400000, guid: 1229b1808e4cea144baf8cb484559347, type: 2}

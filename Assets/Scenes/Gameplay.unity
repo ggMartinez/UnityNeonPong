@@ -3556,46 +3556,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1395496052}
     m_Modifications:
-    - target: {fileID: 4145798833263841349, guid: 3a5d29252313645f0a035946bd8fc2d6, type: 3}
-      propertyPath: m_ActionEvents.Array.size
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145798833263841349, guid: 3a5d29252313645f0a035946bd8fc2d6, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_ActionId
-      value: b4280165-b554-4cf9-8c4e-c80bfa515886
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145798833263841349, guid: 3a5d29252313645f0a035946bd8fc2d6, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_ActionName
-      value: Player/Pause[/Keyboard/escape]
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145798833263841349, guid: 3a5d29252313645f0a035946bd8fc2d6, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145798833263841349, guid: 3a5d29252313645f0a035946bd8fc2d6, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145798833263841349, guid: 3a5d29252313645f0a035946bd8fc2d6, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2054067554189360551}
-    - target: {fileID: 4145798833263841349, guid: 3a5d29252313645f0a035946bd8fc2d6, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145798833263841349, guid: 3a5d29252313645f0a035946bd8fc2d6, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnPause
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145798833263841349, guid: 3a5d29252313645f0a035946bd8fc2d6, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerPause, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4145798833263841349, guid: 3a5d29252313645f0a035946bd8fc2d6, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 4422565624456328851, guid: 3a5d29252313645f0a035946bd8fc2d6, type: 3}
       propertyPath: m_Name
       value: Player1
@@ -3643,34 +3603,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4422565624456328851, guid: 3a5d29252313645f0a035946bd8fc2d6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2054067554189360551}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a5d29252313645f0a035946bd8fc2d6, type: 3}
 --- !u!4 &2054067554189360549 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6998530997453829830, guid: 3a5d29252313645f0a035946bd8fc2d6, type: 3}
   m_PrefabInstance: {fileID: 2054067554189360548}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2054067554189360550 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4422565624456328851, guid: 3a5d29252313645f0a035946bd8fc2d6, type: 3}
-  m_PrefabInstance: {fileID: 2054067554189360548}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2054067554189360551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054067554189360550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa77fc4fdefa7be49941fef2744ed7fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseEvent: {fileID: 11400000, guid: 1229b1808e4cea144baf8cb484559347, type: 2}
 --- !u!1001 &6037813733939264021
 PrefabInstance:
   m_ObjectHideFlags: 0
