@@ -2495,6 +2495,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6505338092035888528, guid: 942fbc71c1f51f644a4749abd22fb3fb, type: 3}
     - target: {fileID: 5086724034180430784, guid: 2210163adfdc046b29a4f0bcf7da00f3, type: 3}
+      propertyPath: extraSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086724034180430784, guid: 2210163adfdc046b29a4f0bcf7da00f3, type: 3}
+      propertyPath: maxExtraSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086724034180430784, guid: 2210163adfdc046b29a4f0bcf7da00f3, type: 3}
       propertyPath: trailRenderer
       value: 
       objectReference: {fileID: 1116763564}
