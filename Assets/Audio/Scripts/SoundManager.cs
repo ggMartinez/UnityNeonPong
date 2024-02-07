@@ -71,4 +71,7 @@ public class SoundManager : MonoBehaviour
         StopAllSounds();
         PlaySound(clip);
     }
+
+
+   
 }

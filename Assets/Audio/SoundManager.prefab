@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5699879126307183889}
   - component: {fileID: 4853304729661587483}
   - component: {fileID: 4399457556803767879}
+  - component: {fileID: 5274648567410492916}
+  - component: {fileID: 4525756328036888048}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -82,6 +84,47 @@ MonoBehaviour:
       - m_Target: {fileID: 4853304729661587483}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: SwitchMusic
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5274648567410492916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246682757761128970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df4f93e717b24941ad4a312188a054a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundManager: {fileID: 4853304729661587483}
+--- !u!114 &4525756328036888048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246682757761128970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be555c4d1b89426d8d18b451e209f85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: eba92a6bdbdc26043ba64b270935febb, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5274648567410492916}
+        m_TargetAssemblyTypeName: MusicSwitcher, Assembly-CSharp
+        m_MethodName: PlayClip
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
