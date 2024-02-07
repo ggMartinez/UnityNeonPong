@@ -11,6 +11,7 @@ public class BallMovement : MonoBehaviour
     [SerializeField] GameObject trailRenderer;
 
     public bool PlayerOneStart = true;    
+    bool moving;
 
 
     int hitCounter = 0;
@@ -25,10 +26,12 @@ public class BallMovement : MonoBehaviour
         transform.position = new Vector2(0f,0f);
     }
     public IEnumerator Launch(){
+        moving = false;
         restartBall();
         hitCounter = 0;
         yield return new WaitForSeconds(1);
-        ToggleTrailRenderer();
+        trailRenderer.SetActive(true);
+        moving = true;
         if (PlayerOneStart) MoveBall(new Vector2(-1,0));
         if (!PlayerOneStart) MoveBall(new Vector2(1,0));
     }
@@ -46,7 +49,7 @@ public class BallMovement : MonoBehaviour
     }
 
     public void ToggleTrailRenderer(){
-        trailRenderer.SetActive(!trailRenderer.activeSelf);
+        if(moving) trailRenderer.SetActive(!trailRenderer.activeSelf);
     }
    
     
