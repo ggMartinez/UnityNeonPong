@@ -28,7 +28,7 @@ public class BallMovement : MonoBehaviour
         restartBall();
         hitCounter = 0;
         yield return new WaitForSeconds(1);
-        trailRenderer.SetActive(true);
+        ToggleTrailRenderer();
         if (PlayerOneStart) MoveBall(new Vector2(-1,0));
         if (!PlayerOneStart) MoveBall(new Vector2(1,0));
     }
@@ -43,6 +43,10 @@ public class BallMovement : MonoBehaviour
         if (hitCounter * extraSpeed < maxExtraSpeed){
             hitCounter++;
         } 
+    }
+
+    public void ToggleTrailRenderer(){
+        trailRenderer.SetActive(!trailRenderer.activeSelf);
     }
    
     
