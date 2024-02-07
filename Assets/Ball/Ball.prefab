@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3896569210097127942
 Transform:
   m_ObjectHideFlags: 0
@@ -161,6 +161,7 @@ GameObject:
   - component: {fileID: 2547099442560468132}
   - component: {fileID: 1901408874036466419}
   - component: {fileID: 1648654721416222823}
+  - component: {fileID: 7364967044533019641}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -477,3 +478,31 @@ MonoBehaviour:
     Pitch: 0
     Loop: 0
     PlayOnAwake: 0
+--- !u!114 &7364967044533019641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8949127643256520469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e2f55f0e126340aa80b6319f4281942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 1229b1808e4cea144baf8cb484559347, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5086724034180430784}
+        m_TargetAssemblyTypeName: BallMovement, Assembly-CSharp
+        m_MethodName: ToggleTrailRenderer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
