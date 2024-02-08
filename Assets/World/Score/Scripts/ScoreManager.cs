@@ -5,20 +5,21 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    int playerOneScore = 0;
-    int playerTwoScore = 0;
+    int[] playerScore;
 
-    [SerializeField] TextMeshProUGUI playerOneScoreText;
-    [SerializeField] TextMeshProUGUI playerTwoScoreText;
+    [SerializeField] TextMeshProUGUI[] playerScoreText;
 
-    public void PlayerOneGoal(){
-        playerOneScore++;
-        playerOneScoreText.text = playerOneScore.ToString();
+    void Start()
+    {
+        playerScore = new int[2];
+        playerScore[0] = 0;
+        playerScore[1] = 0;
+        playerScoreText[0].text = playerScore[0].ToString();
+        playerScoreText[1].text = playerScore[1].ToString();
     }
 
-    public void PlayerTwoGoal(){
-        playerTwoScore++;
-        playerTwoScoreText.text = playerTwoScore.ToString();
+    public void Goal(int player){
+        playerScore[player-1]++;
+        playerScoreText[player-1].text = playerScore[player-1].ToString();
     }
-
 }

@@ -39,7 +39,7 @@ public class BallBounce : MonoBehaviour
         if(collider.gameObject.tag == "LeftBorder"){
             trailRenderer.SetActive(false);
             Instantiate(bigExplosionPrefab, transform.position, Quaternion.identity);
-            scoreManager.PlayerTwoGoal();
+            scoreManager.Goal(1);
             ballMovement.PlayerOneStart = true;
             StartCoroutine(ballMovement.Launch());
 
@@ -48,7 +48,7 @@ public class BallBounce : MonoBehaviour
         if(collider.gameObject.tag == "RightBorder"){
             trailRenderer.SetActive(false);
             Instantiate(bigExplosionPrefab, transform.position, Quaternion.identity);
-            scoreManager.PlayerOneGoal(); 
+            scoreManager.Goal(2);
             ballMovement.PlayerOneStart = false;
             StartCoroutine(ballMovement.Launch());
 

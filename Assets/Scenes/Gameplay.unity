@@ -1457,7 +1457,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &971878232
 Canvas:
   m_ObjectHideFlags: 0
@@ -1493,8 +1493,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c94bad82971e4472ab5ace4bcf284fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerOneScoreText: {fileID: 1418527264}
-  playerTwoScoreText: {fileID: 1712029587}
+  playerScoreText:
+  - {fileID: 1418527264}
+  - {fileID: 1712029587}
 --- !u!1 &993192786
 GameObject:
   m_ObjectHideFlags: 0
@@ -3656,6 +3657,10 @@ PrefabInstance:
     - target: {fileID: 6259885726337937466, guid: 2210163adfdc046b29a4f0bcf7da00f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6624464330514590942, guid: 2210163adfdc046b29a4f0bcf7da00f3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8949127643256520469, guid: 2210163adfdc046b29a4f0bcf7da00f3, type: 3}
       propertyPath: m_Name
